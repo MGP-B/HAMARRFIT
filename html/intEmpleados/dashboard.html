@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HAMARRFIT</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
+    <link rel="stylesheet" href="../../src/css/empleado/dashboard.css">
+</head>
+<body>
+    <div class="contenedor">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img class="logoTablet" src="../../src/img/logo-tablet.png" alt="">
+                <img src="../../src/img/empleados/logo.png" alt="FitnessMax Logo">
+                <img src="../../src/img/empleados/flecha-izquierda.svg" alt="Toggle Sidebar" class="alternarBarraLateral">
+            </div>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/layout-dashboard-active.svg" alt="Dashboard icon">
+                   <span>Dashboard</span> 
+                </a>
+                <a href="clientes.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/users-menu.svg" alt="Clientes icon">
+                   <span>Clientes</span> 
+                </a>
+                <a href="inventario.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/package-menu.svg" alt="Inventario icon">
+                   <span>Inventario</span> 
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/building.svg" alt="Sucursales icon">
+                   <span>Sucursales</span> 
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/scroll-text-menu.svg" alt="Facturación icon">
+                   <span>Facturación</span> 
+                </a>
+
+            </nav>
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
+                </div>
+            </div>
+        </aside>
+        <div class="barraSuperior">
+            <img src="../../src/img/empleados/logo.png" alt="">
+            <div class="avatarUsuario">J</div>
+        </div>
+        <main class="contenidoPrincipal">
+            
+            <header class="encabezadoPanel">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Bienvenido al panel de control de Hamarrfit</p>
+                </div>
+            </header>
+            <div class="cuadriculaEstadisticas">
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/users.svg" alt="Clientes icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Clientes Activos</h3>
+                        <p class="numeroEstadistica">245</p>
+                        <p class="cambioEstadistica">+12% respecto al mes anterior</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/scroll-text.svg" alt="Ventas icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Ventas Totales</h3>
+                        <p class="numeroEstadistica">$12,345</p>
+                        <p class="cambioEstadistica">+5% respecto al mes anterior</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/package.svg" alt="Productos icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Productos Activos</h3>
+                        <p class="numeroEstadistica">120</p>
+                        <p class="cambioEstadistica">+5 nuevos productos este mes</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/panel.svg" alt="Visitas icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Visitas Diarias</h3>
+                        <p class="numeroEstadistica">320</p>
+                        <p class="cambioEstadistica">+16% respecto a la semana anterior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="recent-activities">
+                    <h2>Actividades Recientes</h2>
+                    <p>Eventos programados para hoy</p>
+                    <div class="activities-list">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
