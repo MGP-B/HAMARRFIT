@@ -1,0 +1,47 @@
+@import '../../global/estilosGlobales.css';
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    width: 31%;
+    height: 400px;
+    margin: 10px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.servicio h2 {
+    padding-top: 30px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicio p {
+    padding: 3px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 8px;
+}

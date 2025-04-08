@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor header {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    margin-block: 20px;
+    width: 250px;
+}
+
+.datosdeusuario h1{
+    margin-block: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.personales {
+    display: flex;
+    justify-content: center;
+}
+
+.personales form {
+    display: block;
+
+    width: 570px;
+
+}
+
+.personales form div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.personales form div label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.personales form div input {
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: none;
+    width: 300px;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.personales form div select {
+    width: 314px;
+    background-color: rgba(255, 165, 0, 0.5);
+    padding: 5px 7px;
+        border-radius: 7px;
+        border: none;
+}
+
+.personales h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-block: 30px;
+}
+
+.personales form button {
+    display: flex;
+    margin: 40px auto;
+    padding: 7px 40px;
+    border-radius: 8px;
+    border: 0;
+    color: black;
+    font-weight: 900;
+    background-color: #FFA500;
+}
+
