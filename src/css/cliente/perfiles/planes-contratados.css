@@ -159,7 +159,7 @@
 }
 
 .beneficios ul li {
-    background: url(../../img/Vector.png) no-repeat left;
+    background: url(/src/img/Vector.png) no-repeat left;
     background-size: 20px;
     display: block;
     padding-left: 40px;
