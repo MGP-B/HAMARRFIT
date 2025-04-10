@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Pytone;
+    font-family: Paytone;
     src: url(../../fuente/Paytone_One/PaytoneOne-Regular.ttf);
 }
 
@@ -19,6 +19,7 @@
 body {
     line-height: 1.6;
     background-color: #fff;
+    font-family: Inter;
 }
 
 body::-webkit-scrollbar {
@@ -202,6 +203,7 @@ header {
 
 /* Tarjeta de plan */
 .plan {
+    color: white;
     background: #2B2D2F;
     border-radius: 8px;
     margin-inline: auto;
@@ -242,6 +244,7 @@ header {
 .plan h2 {
     color: white;
     font-size: 30px;
+    font-family: Paytone;
 }
 
 .plan h2 span {
@@ -259,7 +262,7 @@ header {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #000000;
-    color: #000000;
+    color: #000;
     cursor: pointer;
     font-size: 18px;
 }
