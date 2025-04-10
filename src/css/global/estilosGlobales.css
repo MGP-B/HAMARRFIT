@@ -8,6 +8,11 @@
     src: url(../../fuente/static/Inter_18pt-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: InterBlack;
+    src: url(../../fuente/static/Inter_18pt-Black.ttf)
+}
+
 /* Reset básico para eliminar márgenes y padding predeterminados */
 * {
     box-sizing: border-box;

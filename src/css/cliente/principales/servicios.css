@@ -1,27 +1,124 @@
 @import '../../global/estilosGlobales.css';
 
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     align-content: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.historia{
+    display: flex;
+    padding: 20px;
+    margin: 50px auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.historia img {
+    width: 350px;
+    margin-right: 40px;
+}
+
+.historia p{
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.mision_vision {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mision_vision div {
+    margin: 20px 20px;
+    width: 400px;
+}
+
+.mision_vision h2{
+    font-size: 30px;
+    font-family: Paytone;
+    text-align: center;
+    width: 100%;
+}
+
+.mision_vision span {
+    color: #ffa500;
+}
+
+.mision_vision p {
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.valores{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.valores h2{
+    font-size: 30px;
+    font-family: Paytone;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.valores h2 span {
+    color: #ffa500;
+}
+
+.valores div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 10px;
+    width: 20%;
+}
+
+.valores div img {
+    width: 120px;
+    height: 120px;
+}
+
+.valores h3 {
+    text-align: center;
+    width: 100%;
+    font-family: InterBlack;
 }
 
 section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-top: 50px;
     align-items: center;
     align-content: center;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: InterBlack;
 }
 
 .servicio {
-    width: 31%;
+    width: 30%;
     height: 400px;
-    margin: 10px;
+    margin: 20px 0;
     line-height: 1.2;
     margin-bottom: 50px;
     padding: 20px;
@@ -42,6 +139,7 @@ section {
 }
 
 .servicio img {
-    width: 100%;
+    width: 215px;
+    height: 140px;
     border-radius: 8px;
 }
