@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Python;
+    src: url(../../../fuente/Paytone_One/PaytoneOne-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../../../img/fondo-iniciar-sesion.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Python;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.container header {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.384);
+    color: white;
+    height: 300px;
+    width: 350px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.formulario label {
+    font-size: 22px;
+}
+
+.formulario input {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+}
