@@ -1,3 +1,5 @@
+
+
 /* Reset básico para eliminar márgenes y padding predeterminados */
 * {
     box-sizing: border-box;
@@ -7,6 +9,7 @@
 
 /* Estilos base del body */
 body {
+    font-family: Inter;
     line-height: 1.6;
     background-color: #fff;
 }
@@ -26,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 .contenedor {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 0 270px; /* Añadido padding izquierdo para compensar el menú */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,27 +37,27 @@ body::-webkit-scrollbar-thumb {
 
 /* Estilos del header y navegación */
 header {
-    background-color: #2B2D2F;
-    padding: 1rem;
+    background-color: transparent;
+    padding: 0;
     top: 0;
-}
-
-.menuTelefono {
-    display: flex;
+    width: 100%;
 }
 
 /* Configuración del menú principal */
 .menu {
-    align-items: center;
+    height: 60px;
+    background-color: #2B2D2F;
     display: flex;
-    justify-content: space-between;
-    max-width: 860px;
-    margin: 0 auto;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
 /* Estilos del logo */
 .logo {
     max-width: 200px;
+    padding: 0 20px;
 }
 
 .logo img {
@@ -63,13 +66,19 @@ header {
 
 /* Lista de navegación */
 .menu ul {
-    align-items: center;
     display: flex;
     list-style: none;
+    width: 100%;
 }
 
 .menu li {
-    margin: 0 20px;
+    margin: 15px 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.list img{
+    display: none;
 }
 
 /* Iconos del menú */
@@ -77,6 +86,7 @@ header {
     height: 24px;
     width: 24px;
     filter: brightness(0) invert(1);
+    margin-right: 10px;
 }
 
 /* Enlaces del menú */
@@ -84,178 +94,79 @@ header {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .menu ul li a:hover {
     color: #FFA500;
 }
 
-/* Imagen principal */
-.imagen {
-    margin: 20px 0;
-    padding: 0 10px;
-    width: 100%;
-}
 
-.imagen img {
-    border-radius: 8px;
-    height: auto;
-    width: 100%;
-}
-
-/* Sección de productos destacados */
-.seccion-productos {
-    margin: 3rem 0;
-    text-align: center;
-    width: 100%;
-}
-
-.center {
-    flex-wrap: wrap;
+/* Estilos para los elementos del menú con iconos */
+.menu ul li {
     display: flex;
-    margin: auto;
-    gap: 2rem;
-}
-
-.seccion-productos h2 {
-    margin-bottom: 2rem;
-}
-
-/* Grid de productos */
-.productos {
-    width: 100%;
-    display: grid;
-    padding: 0 10px;
-}
-
-/* Tarjeta de producto individual */
-.producto {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(136, 136, 136, 0.5);
-    padding: 1rem;
-    width: 250px;
-    line-height: 5px;
-}
-
-.producto img {
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.producto h3 {
-    margin-bottom: 0.5rem;
-}
-
-/* Contenedor de precio */
-.precio {
     align-items: center;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin: 1rem 0;
 }
 
-.precio p {
-    color: #FFA500;
-    font-weight: bold;
+/* Media queries para hacer el menú responsive */
+@media screen and (max-width: 900px) {
+    .contenedor {
+        padding-left: 20px; 
+    }
+    
+
 }
 
-/* Botón de producto */
-.producto button {
-    background-color: #FFA500;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-    width: 100%;
+@media screen and (max-width: 400px) {
+    .menu {
+        display: block;
+        z-index: 1000;
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .list img {
+        display: none;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+    
+    .menu ul { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #2B2D2F;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+    
+    
+    .contenedor {
+        padding-left: 20px;
+    }
+    
+    
+    .menu ul li:last-child {
+        display: block;
+
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
 }
 
-.producto button:hover {
-    background-color: #e69500;
-}
 
-/* Sección de planes */
-.planes {
-    margin: 3rem 0;
-    text-align: center;
-}
-
-.selecciona h2 {
-    margin-bottom: 2rem;
-}
-
-/* Tarjeta de plan */
-.plan {
-    background: #2B2D2F;
-    border-radius: 8px;
-    margin-inline: auto;
-    padding: 2rem;
-    width: 100%;
-    height: 150px;
-}
-
-.pro {
-    box-shadow: 0 0 30px 5px #FFA500;
-}
-
-.space {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.space button {
-    background-color: #FFA500;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    padding: 6px 30px;
-    transition: background-color 0.3s ease;
-    width: fit-content;
-}
-
-.space button:hover {
-    background-color: #e69500;
-}
-
-/* Título del plan y span destacado */
-.plan h2 {
-    color: white;
-    font-size: 30px;
-}
-
-.plan h2 span {
-    color: #FFA500;
-}
-
-/* Sección de beneficios */
-.beneficiosPRO,
-.beneficiosBASIC {
-    margin: 1rem 0;
-}
-
-.beneficiosPRO button,
-.beneficiosBASIC button {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #000000;
-    color: #000000;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.beneficiosPRO button:hover,
-.beneficiosBASIC button:hover {
-    border-bottom: 2px solid #ffa600;
-    color: #ffa600;
-}
