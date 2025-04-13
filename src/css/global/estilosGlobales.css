@@ -1,3 +1,5 @@
+@import 'reset.css';
+
 @font-face {
     font-family: Paytone;
     src: url(../../fuente/Paytone_One/PaytoneOne-Regular.ttf);
@@ -11,6 +13,10 @@
 @font-face {
     font-family: InterBlack;
     src: url(../../fuente/static/Inter_18pt-Black.ttf)
+}
+
+.ocultar{
+    display: none;
 }
 
 /* Reset básico para eliminar márgenes y padding predeterminados */
@@ -46,6 +52,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+h2{
+    font-size: 25px;
 }
 
 /* Estilos del header y navegación */
@@ -200,6 +210,11 @@ header {
 .planes {
     margin: 3rem 0;
     text-align: center;
+}
+
+#beneficio{
+    margin-left: 10px;
+    text-align: left;
 }
 
 .selecciona h2 {
