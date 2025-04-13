@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMARRFIT</title>
+    <link rel="stylesheet" href="src/css/global/estilosGlobales.css">
+    <link rel="icon" type="image/x-icon" href="src/img/fitnessmax-favicon.png">
+</head>
+
+<body>
+    <header>
+        <!-- Contenedor del menú de navegación -->
+        <div class="menu">
+            <!-- Logo de la página -->
+            <div class="logo">
+                <img src="src/img/logo.png" alt="logo">
+            </div>
+            <!-- Lista de enlaces e iconos del menú -->
+            <ul>
+                <li><a href="html/productos.html">Productos</a></li>
+                <li><a href="html/servicios.html">Nosotros</a></li>
+                <li><img src="src/img/search (3).svg" alt="Ícono de búsqueda"></li>
+                <li>
+                    <a href="html/perfil/perfil-usuario.html">
+                        <img src="src/img/circle-user.svg" alt="Icono de usuario">
+                    </a>
+                </li>
+                <li>
+                    <a href="html/carrito.html">
+                        <img src="src/img/shopping-cart (3).svg" alt="Ícono de carrito de compras">
+                    </a>
+                </li>
+                <li class="ocultar">
+                    <img src="src/img/list (1) 1.svg" alt="Ícono de menú desplegable">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Contenedor para todos los elementos -->
+    <div class="contenedor">
+
+
+        <main>
+            <div class="imagen">
+                <img src="src/img/imagen-maIn.png" alt="Imagen del producto">
+            </div>
+
+            <!-- Sección de productos destacados -->
+            <div class="seccion-productos">
+                <h2>PRODUCTOS DESTACADOS</h2>
+                <div class="productos">
+                    <div class="center">
+                        <!-- Producto 1 -->
+                        <div class="producto">
+                            <a href="html/perfildeProducto.html"><img src="src/img/imagen.png" alt="Imagen del producto"></a>
+                            <h3>Nombre Producto</h3>
+                            <div class="precio">
+                                <h4>Precio:</h4>
+                                <p>RD$ 1,000</p>
+                            </div>
+                            <button>Agregar al carrito</button>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="producto">
+                            <a href="html/perfildeProducto.html"><img src="src/img/imagen.png" alt="Imagen del producto"></a>
+                            <h3>Nombre Producto</h3>
+                            <div class="precio">
+                                <h4>Precio:</h4>
+                                <p>RD$ 1,000</p>
+                            </div>
+                            <button>Agregar al carrito</button>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="producto">
+                            <a href="html/perfildeProducto.html"><img src="src/img/imagen.png" alt="Imagen del producto"></a>
+                            <h3>Nombre Producto</h3>
+                            <div class="precio">
+                                <h4>Precio:</h4>
+                                <p>RD$ 1,000</p>
+                            </div>
+                            <button>Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sección de planes de suscripción -->
+
+            <div class="planes">
+                <div class="selecciona">
+                    <h2>Selecciona tu Plan</h2>
+                </div>
+
+                <!-- Plan Hamarr Pro -->
+                <p id="beneficio">Más beneficios</p>
+                <div class="plan pro">
+                    <div class="space">
+                        <h2>HAMARR<span>PRO</span></h2>
+                        <div>
+                            <h4>RD$ 1,500 / Mes</h4>
+                            <form action="/html/cuentas/inscripcionPro.html" method="get">
+                            <button>Inscribirse</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficiosPRO">
+                    <button>Ver Beneficios</button>
+                </div>
+
+                <!-- Plan Hamarr Basic -->
+                <div class="plan basic">
+                    <div class="space">
+                        <h2>HAMARR<span>BASIC</span> </h2>
+                        <div>
+                            <h4>RD$ 1,200 / Mes</h4>
+                            <form action="/html/cuentas/inscripcionBasic.html" method="get">
+                                <button>Inscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficiosBASIC">
+                    <button>Ver Beneficios</button>
+                </div>
+        </main>
+    </div>
+</body>
+
+</html>
