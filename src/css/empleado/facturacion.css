@@ -1,0 +1,111 @@
+.controlesFacturacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+
+.filtros {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.barraBusqueda {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.iconoBusqueda {
+    width: 20px;
+    height: 20px;
+    color: #666;
+}
+
+.barraBusqueda input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 250px;
+    font-size: 14px;
+}
+
+.botonBuscar {
+    background-color: #F97316;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.botonBuscar:hover {
+    background-color: #e85a2c;
+}
+
+.botonCrearFactura {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #F97316;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.botonCrearFactura:hover {
+    background-color: #e85a2c;
+}
+
+.botonCrearFactura img {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 400px) {
+    .filtrosClientes {
+        width: 100%;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+    }
+
+    .barraBusqueda input {
+        width: 100%;
+    }
+
+    .botonCrearFactura {
+        width: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonCrearFactura img {
+        translate: 2px;
+    }
+
+    .botonCrearFactura span {
+        display: none;
+    }
+
+    .botonCrearFactura {
+        width: 35px;
+        height: 35px;
+    }   
+}

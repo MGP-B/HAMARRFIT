@@ -1,0 +1,58 @@
+@import '../../global/estilosGlobales.css';
+
+
+.contenedor .producto-principal {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.contenedor  .producto-principal img {
+    width: 50%;
+    height: auto;
+}
+
+.contenedor .producto-contenido {
+    margin: 50px auto;
+    width: 100%;
+}
+
+.contenedor .producto-contenido .descripcion {
+    background-color: #d9d9d977;
+    color: #000;
+    border-radius: 20px;
+    height: 150px;
+    width: 85%;
+    padding: 10px;
+}
+
+.contenedor .producto-contenido .precio-boton {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 5px auto;
+    margin-right: 50px;
+}
+
+.contenedor .producto-contenido .precio-boton  p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#agregar {
+    background-color: #ffa500;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#agregar:hover {
+    background-color: #e99c0e;
+}
+

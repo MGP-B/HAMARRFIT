@@ -1,0 +1,86 @@
+@import '../../global/estilosGlobales.css';
+
+.contenedor {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    position: fixed;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    padding: 40px 20px;
+    translate: -560px -410px;
+    width: 200px;
+    scale: 0.8;
+}
+
+aside h2{
+    border-bottom: 1px solid black;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.filtro {
+    overflow: auto;
+    height: 400px
+}
+
+.filtro::-webkit-scrollbar{
+    background-color: #ccc;
+    width: 7px;
+}
+
+.filtro::-webkit-scrollbar-thumb{
+    background-color: #FFA500;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.filtro h3 {
+    font-size: 20px;
+}
+
+.filtro li {
+    padding-left: 7px;
+}
+
+.filtro li a {
+    color: #736F6F;
+    text-decoration: none;
+}
+
+.filtro li a:hover {
+    color: #FFA500;
+}
+
+.listPag {
+    align-items: center;
+    background-color: #ccc;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.listPag a{
+    border-radius: 50%;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    font-weight: 600;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+.listPag a:hover {
+    color: #FFA500;
+}

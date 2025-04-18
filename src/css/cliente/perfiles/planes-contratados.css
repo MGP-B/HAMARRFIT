@@ -1,0 +1,338 @@
+@import '../../global/estilosGlobales.css';
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 170px;
+    margin: 25px auto;
+    margin-top: -5px;
+}
+
+.banner img {
+    border-radius: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+.perfil-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -5px;
+    padding: 20px;
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 1 300px;
+    max-width: 300px; 
+    min-width: 200px;
+    margin-right: 20px;
+    margin-top: -50px;
+    transform: scale(0.9,0.9);
+}
+
+.perfil-container .icon-perfil2 {
+    display: flex;
+    justify-content: left;
+    margin-top: -150px;
+    max-width: 160px;
+    height: 160px;
+}
+
+.perfil-container .icon-perfil2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.perfil-container .nombre-membresia {
+    text-align: center;
+    margin-top: -8px;
+    max-width: 290px;
+    line-height: 1.2;
+}
+
+.perfil-container .nombre-membresia h3 {
+    font-size: 20px;
+}
+
+.perfil-container .nombre-membresia p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.perfil-container .perfil-opciones {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 15px;
+    width: 90%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container .perfil-opciones ul {
+    margin: 0 5px;
+    list-style: none;
+}
+
+.perfil-container .perfil-opciones ul li {
+    line-height: 3.5;
+}
+
+.perfil-container .perfil-opciones ul li a {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.perfil-container .perfil-opciones ul li #selection {
+    color: #FFA500;
+}
+
+.perfil-container .perfil-opciones ul li a:hover {
+    color: #FFA500;
+}
+
+.planes-contratados {
+    flex: 1;
+    max-height: 400px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    overflow: auto;
+    transform: scale(0.9,0.9);
+}
+
+.planes-contratados h2 {
+    text-align: center;
+    font-size: 23px;
+    width: 35%;
+}
+
+.planes-contratados h2+h2 {
+    border-top: 1px solid black;
+}
+
+
+.planes-contratados h2 span {
+    color: #FFA500;
+}
+
+
+.beneficios {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1;
+    padding: 35px;
+    margin: 30px auto;
+    height: 25%;
+    width: 85%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.beneficios ul {
+    padding: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+
+.beneficios ul li {
+    background: url(../../img/Vector.png) no-repeat left;
+    background-size: 20px;
+    display: block;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.beneficios h4 {
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.beneficios h4 span {
+    color: #0BAB02;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50px; 
+}
+
+#boton-cancelar {
+    background-color: #FF4640;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+    height: 45px;
+    width: 200px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#boton-cancelar:hover {
+    background-color: #e7433e;
+}
+
+.extras {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 30px auto;
+    height: 10%;
+    width: 80%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extras h2 {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.extras table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras table tr td {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.extras table tr td .boton-eliminar {
+    background-color: #FF4640;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    height: 30px;
+    width: 80px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.extras table tr td .boton-eliminar:hover {
+    background-color: #e7433e;
+}
+
+@media screen and (max-width: 480px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        margin-top: -40px;
+    }
+
+    .perfil-container {
+        width: 70%;
+        max-width: 350px;
+        margin: 20px auto; 
+    }
+
+    .planes-contratados {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        transform: scale(0.9, 0.9);
+    }
+
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+        transform: scale(1, 1);
+        margin-top: -90px;
+    }
+
+    .perfil-container {
+        width: 70%;
+        max-width: 350px;
+        margin: 40px auto; 
+    }
+
+    .planes-contratados {
+        width: 90%;
+        max-width: 450px;
+        transform: scale(0.9, 0.9);
+    }
+
+    .planes-contratados h2 {
+        font-size: 1.1rem;
+    }
+
+    .beneficios {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .extras {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .perfil-contenido {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .perfil-container {
+        max-width: 300px;
+    }
+
+    .planes-contratados {
+        max-width: 900px;
+    }
+
+    .beneficios {
+        padding: 35px;
+        font-size: 1rem;
+    }
+
+    .extras {
+        width: 80%;
+        padding: 25px;
+    }
+}
