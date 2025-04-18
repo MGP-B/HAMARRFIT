@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - FitnessMax</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
+    <link rel="stylesheet" href="../../src/css/empleado/clientes.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img class="logoTablet" src="../../src/img/logo-tablet.png" alt="">
+                <img src="../../src/img/empleados/logo.png" alt="FitnessMax Logo">
+                <img src="../../src/img/empleados/flecha-izquierda.svg" alt="Toggle Sidebar"
+                    class="alternarBarraLateral">
+            </div>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/panel-menu.svg" alt="Dashboard icon">
+                   <span>Dashboard</span> 
+                </a>
+                <a href="clientes.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/users-active.svg" alt="Clientes icon">
+                   <span>Clientes</span> 
+                </a>
+                <a href="inventario.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/package-menu.svg" alt="Inventario icon">
+                   <span>Inventario</span> 
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/building.svg" alt="Sucursales icon">
+                   <span>Sucursales</span> 
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/scroll-text-menu.svg" alt="Facturación icon">
+                   <span>Facturación</span> 
+                </a>
+
+            </nav>
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
+                </div>
+            </div>
+        </aside>
+
+        <div class="barraSuperior">
+            <img src="../../src/img/empleados/logo.png" alt="">
+            <div class="avatarUsuario">J</div>
+        </div>
+        <main class="contenidoPrincipal">
+            <header class="encabezadoPanel">
+
+                <div>
+                    <h1>Clientes</h1>
+                    <p>Gestiona tus clientes y membresías</p>
+                </div>
+            </header>
+            <div class="filtrosClientes">
+                <div class="filtros">
+                    <div class="barraBusqueda">
+                        <img src="../../src/img/empleados/search.svg" alt="Search icon" class="iconoBusqueda">
+                        <input type="text" placeholder="Buscar clientes...">
+                    </div>
+                </div>
+
+                <button class="botonAgregarCliente">
+                    <img src="../../src/img/empleados/user-plus.svg" alt="Add icon">
+                    <span>Agregar Cliente</span>
+                </button>
+            </div>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>EMAIL</th>
+                            <th>TELÉFONO</th>
+                            <th>MEMBRESÍA</th>
+                            <th>ESTADO</th>
+                            <th>ACCIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CLI-001</td>
+                            <td>José Alexander</td>
+                            <td>josealex@ejemplo.com</td>
+                            <td>809-532-9573</td>
+                            <td><span class="etiquetaMembresia fitnessPlus">FitnessPlus</span></td>
+                            <td><span class="etiquetaEstado activo">Activo</span></td>
+                            <td class="botonesAccion">
+                                <button class="botonEditar"><img src="../../src/img/empleados/ellipsis-vertical.svg"
+                                        alt="Edit"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CLI-002</td>
+                            <td>María Rodríguez</td>
+                            <td>mariaRodr@ejemplo.com</td>
+                            <td>809-555-1234</td>
+                            <td><span class="etiquetaMembresia fitnessPlus">FitnessPlus</span></td>
+                            <td><span class="etiquetaEstado activo">Activo</span></td>
+                            <td class="botonesAccion">
+                                <button class="botonEditar"><img src="../../src/img/empleados/ellipsis-vertical.svg"
+                                        alt="Edit"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CLI-003</td>
+                            <td>Carlos Méndez</td>
+                            <td>carlosmen@ejemplo.com</td>
+                            <td>809-666-7890</td>
+                            <td><span class="membership-tag basic">Basic</span></td>
+                            <td><span class="status-tag inactive">Inactivo</span></td>
+                            <td class="botonesAccion">
+                                <button class="botonEditar"><img src="../../src/img/empleados/ellipsis-vertical.svg"
+                                        alt="Edit"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CLI-004</td>
+                            <td>Ana Jiménez</td>
+                            <td>anajim@ejemplo.com</td>
+                            <td>809-777-4321</td>
+                            <td><span class="membership-tag basic">Basic</span></td>
+                            <td><span class="etiquetaEstado activo">Activo</span></td>
+                            <td class="botonesAccion">
+                                <button class="botonEditar"><img src="../../src/img/empleados/ellipsis-vertical.svg"
+                                        alt="Edit"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <dialog id="agregarCliente">
+                <div class="contenidoModal" style="display: block;">
+                    <h2>Agregar Nuevo Cliente</h2>
+                    <p>Completa los detalles del cliente para registrarlo en el sistema.</p>
+                    <form action="/" method="POST">
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+
+                        <label for="cedula">Cédula de Identidad:</label>
+                        <input type="text" id="cedula" name="cedula" required>
+
+
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" id="sexo" value="sosa">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+
+
+
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+
+
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+
+
+                        <label for="estado">Estado/Provincia:</label>
+                        <input type="text" id="estado" name="estado" required>
+
+
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" required>
+
+                        <button id="cancelar">Cancelar</button>
+                        <input type="submit" value="Enviar">
+
+                    </form>
+                </div>
+            </dialog>
+        </main>
+    </div>
+</body>
+
+</html>

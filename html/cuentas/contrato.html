@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato</title>
+    <link rel="stylesheet" href="../../src/css/cliente/contrato.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>  
+        <a href="#" id="logo"><img src="../../src/img/HamarrFit-black 1.png" alt="Logo"></a>
+        </header>
+        <!-- Membresías -->
+        <form class="membresias">
+            <article class="fitness-pro">
+                <h2>HAMARR<span>PRO</span></h2>
+                <label for="opcion1">¡Inscripción Gratis!</label>
+                <input type="radio" id="opcion1" name="opciones" value="1">
+            </article>
+            <article class="fitness-basic">
+                <h2>HAMARR<span>BASIC</span></h2>
+                <label for="opcion2">¡Inscripción Gratis!</label>
+                <input type="radio" id="opcion2" name="opciones" value="2">
+            </article>
+        </form>
+        <!-- Adicionales -->
+        <div class="adicionales">
+            <h2>ADICIONALES</h2>
+            <div class="extras">
+                <label for="ep">Entrenamientos Personalizados</label>
+                <input type="checkbox" name="ep" id="ep"><br>
+                <label for="dyz">Danza y Zumba</label>
+                <input type="checkbox" name="dyz" id="dyz"><br>
+                <label for="pa">Planes Alimenticios</label>
+                <input type="checkbox" name="pa" id="pa">
+            </div>
+        </div>
+        <!-- Sucursal -->
+        <div class="sucursal">
+            <h2>SUCURSAL</h2>
+            <div class="sucursal-info">
+                <div class="sucursal-info1">
+                    <p>Santiago Centro</p>
+                    <p id="gris"><img src="../../src/img/icon-map.png" alt="Icon-map"> Calle Principal 123, Ciudad</p>
+                </div>
+                <div class="sucursal-info2">
+                    <p>FITNESS<span>PRO</span></p>
+                    <p>1,500 RD$</p>
+                </div>
+            </div>
+        </div>
+        <!-- Factura -->
+        <div class="factura">
+            <table>
+                <tr>
+                    <th class="center">FITNESS PRO</th>
+                </tr>
+                <tr>
+                    <td>Inscripción:</td>
+                </tr>
+                <tr class="gris">
+                    <td>Precio:</td>
+                    <td>0.00 RD$</td>
+                </tr>
+                <tr>
+                    <td>Mensualidad</td>
+                </tr>
+                <tr class="gris">
+                    <td>Precio:</td>
+                    <td>1,500.00 RD$</td>
+                </tr>
+                <tr>
+                    <th>Adicionales</th>
+                </tr>
+                <tr>
+                    <td>E.Personalizados</td>
+                </tr>
+                <tr class="gris">
+                    <td>Precio:</td>
+                    <td>1,000.00 RD$</td>
+                </tr>
+                <tr>
+                    <td>Danza y Zumba</td>
+                </tr>
+                <tr class="gris">
+                    <td>Precio:</td>
+                    <td>800.00 RD$</td>
+                </tr>
+                <tr>
+                    <td>Planes Alimenticios</td>
+                </tr>
+                <tr class="gris">
+                    <td>Precio:</td>
+                    <td>500.00 RD$</td>
+                </tr>
+            </table>
+            <!-- Botón de confirmación de suscripción -->
+            <button>Terminar Compra</button>
+        </div>
+    </div>
+</body>
+</html>
