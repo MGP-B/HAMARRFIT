@@ -19,7 +19,7 @@ main {
 }
 
 .historia img {
-    width: 350px;
+    width: 380px;
     margin-right: 40px;
 }
 
@@ -33,10 +33,11 @@ main {
     align-content: center;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .mision_vision div {
-    margin: 20px 20px;
+    margin: 20px 40px;
     width: 400px;
 }
 
@@ -98,12 +99,12 @@ main {
 }
 
 section {
-    margin-top: 50px;
+    display: flex;
     align-items: center;
     align-content: center;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -116,15 +117,20 @@ section h2 {
 }
 
 .servicio {
-    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    align-items: center;
+    width: 28%;
     height: 400px;
-    margin: 20px 0;
+    margin: 10px 0;
     line-height: 1.2;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 20px;
 }
 
 .servicio h4 {
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 3px;
     font-size: 18px;
@@ -135,13 +141,14 @@ section h2 {
 }
 
 .servicio p {
+    width: 100%;
     padding: 3px;
     font-size: 15px;
     text-align: justify;
 }
 
 .servicio img {
-    width: 215px;
-    height: 140px;
+    width: 95%;
+    height: 180px;
     border-radius: 8px;
 }

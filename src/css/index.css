@@ -1,0 +1,101 @@
+@import 'global/estilosGlobales.css';
+@import 'reset.css';
+
+/* Estilos específicos para la página index */
+
+/* Imagen principal */
+.list {
+    display: none;
+}
+
+.imagen img {
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+/* Tablet (900px) */
+@media screen and (max-width: 900px) {
+    .contenedor {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .center {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .producto {
+        width: 220px;
+    }
+    
+    .plan {
+        height: auto;
+        padding: 1.5rem;
+    }
+    
+    .space {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .space div {
+        margin-top: 1rem;
+    }
+}
+
+/* (400px) */
+@media screen and (max-width: 400px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .menu li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .list img {
+        display: block;
+    }
+    
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .producto {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .plan {
+        padding: 1rem;
+    }
+    
+    .space h2 {
+        font-size: 24px;
+    }
+    
+    .space h4 {
+        font-size: 14px;
+    }
+    
+    .space button {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+}
