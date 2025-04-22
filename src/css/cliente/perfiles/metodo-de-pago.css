@@ -190,3 +190,51 @@ form table tr td input {
 .metodo-de-pago .boton-container #boton-guardar:hover {
     background-color: #e99c0c;
 }
+
+@media screen and (max-width: 600px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        margin-top: -40px;
+    }
+
+    .perfil-container {
+        width: 70%;
+        max-width: 350px;
+        margin: 20px auto; 
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .banner {
+        transform: scale(0.9, 0.9);
+    }
+
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+        transform: scale(1, 1);
+        margin-top: -70px;
+    }
+
+    .perfil-container {
+        width: 70%;
+        max-width: 350px;
+        margin: 20px auto; 
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .banner {
+        height: 180px;
+    }
+
+    .perfil-contenido {
+        padding: 15px 30px;
+        gap: 20px;
+    }
+}
