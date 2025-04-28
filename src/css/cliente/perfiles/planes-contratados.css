@@ -1,4 +1,4 @@
-@import '../../global/estilosGlobales.css';
+@import url(../../global/estilosGlobales.css);
 
 .banner {
     display: flex;
@@ -159,7 +159,7 @@
 }
 
 .beneficios ul li {
-    background: url(../../img/Vector.png) no-repeat left;
+    background: url(/src/img/Vector.png) no-repeat left;
     background-size: 20px;
     display: block;
     padding-left: 40px;
@@ -251,7 +251,7 @@
     background-color: #e7433e;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .perfil-contenido {
         flex-direction: column;
         align-items: center;
@@ -271,7 +271,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .banner {
         transform: scale(0.9, 0.9);
     }
@@ -312,27 +312,13 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .banner {
+        height: 180px;
+    }
+
     .perfil-contenido {
-        padding: 20px;
+        padding: 15px 30px;
         gap: 20px;
-    }
-
-    .perfil-container {
-        max-width: 300px;
-    }
-
-    .planes-contratados {
-        max-width: 900px;
-    }
-
-    .beneficios {
-        padding: 35px;
-        font-size: 1rem;
-    }
-
-    .extras {
-        width: 80%;
-        padding: 25px;
     }
 }
