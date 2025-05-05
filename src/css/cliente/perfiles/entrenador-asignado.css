@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: center;
     width: 100%; 
-    height: 170px;
+    height: 180px;
     margin: 25px auto;
     margin-top: -5px;
 }
 
 .banner img {
     border-radius: 20px;
-    height: 80%;
+    height: 90%;
     width: 100%;
 }
 
@@ -21,8 +21,8 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    height: 90%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     margin: 0 auto;
     margin-top: -5px;
     padding: 20px;
@@ -37,7 +37,7 @@
     max-width: 300px; 
     min-width: 200px;
     margin-right: 20px;
-    margin-top: -50px;
+    margin-top: -45px;
     transform: scale(0.9,0.9);
 }
 
@@ -114,7 +114,7 @@
     flex-direction: column;
     margin-top: -50px;
     overflow: auto;
-    transform: scale(0.9,0.9);
+    transform: scale(0.8,0.8);
     line-height: 0.4;
 }
 
@@ -143,7 +143,7 @@
     border-radius: 50px;
     padding: 30px;
     height: 30%;
-    width: 90%;
+    width: 80%;
 }
 
 .informacion-entrenador h3 {
