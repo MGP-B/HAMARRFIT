@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: center;
     width: 100%; 
-    height: 170px;
+    height: 180px;
     margin: 25px auto;
     margin-top: -5px;
 }
 
 .banner img {
     border-radius: 20px;
-    height: 80%;
+    height: 90%;
     width: 100%;
 }
 
@@ -21,8 +21,8 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    height: 90%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     margin: 0 auto;
     margin-top: -5px;
     padding: 20px;
@@ -37,7 +37,7 @@
     max-width: 300px; 
     min-width: 200px;
     margin-right: 20px;
-    margin-top: -50px;
+    margin-top: -45px;
     transform: scale(0.9,0.9);
 }
 
@@ -114,7 +114,7 @@
     flex-direction: column;
     margin-top: -50px;
     overflow: auto;
-    transform: scale(0.9,0.9);
+    transform: scale(0.8,0.8);
 }
 
 .planes-contratados h2 {
@@ -143,7 +143,7 @@
     padding: 35px;
     margin: 30px auto;
     height: 25%;
-    width: 85%;
+    width: 65%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -210,7 +210,7 @@
     padding: 25px;
     margin: 30px auto;
     height: 10%;
-    width: 80%;
+    width: 55%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -251,13 +251,22 @@
     background-color: #e7433e;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+    .banner {
+        max-width: 480px;
+        transform: scale(0.8, 0.8);
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
     .perfil-contenido {
         flex-direction: column;
         align-items: center;
         padding: 10px;
         gap: 10px;
-        margin-top: -40px;
+        margin-top: -70px;
     }
 
     .perfil-container {
@@ -267,52 +276,52 @@
     }
 
     .planes-contratados {
-        transform: scale(0.8, 0.8);
+        max-width: 480px;
+    }
+
+    .extras {
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .banner {
         transform: scale(0.9, 0.9);
     }
 
     .perfil-contenido {
-        flex-direction: column;
-        align-items: center;
         padding: 15px;
         gap: 15px;
-        transform: scale(1, 1);
-        margin-top: -90px;
+        transform: scale(0.9, 0.9);
+        margin-top: -95px;
     }
 
     .perfil-container {
         width: 70%;
         max-width: 350px;
-        margin: 40px auto; 
+        margin: 20px auto; 
     }
 
     .planes-contratados {
-        width: 90%;
-        max-width: 450px;
-        transform: scale(0.9, 0.9);
+        margin-top: 10px;
     }
 
-    .planes-contratados h2 {
+    /* .planes-contratados h2 {
         font-size: 1.1rem;
     }
 
     .beneficios {
         padding: 20px;
         font-size: 1rem;
-    }
+    } */
 
     .extras {
-        width: 90%;
+        width: 55%;
         padding: 20px;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+/* @media screen and (min-width: 1024px) and (max-width: 1440px) {
     .banner {
         height: 180px;
     }
@@ -321,4 +330,4 @@
         padding: 15px 30px;
         gap: 20px;
     }
-}
+} */

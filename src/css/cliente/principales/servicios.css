@@ -1,47 +1,154 @@
 @import '../../global/estilosGlobales.css';
 
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     align-content: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.historia{
+    display: flex;
+    padding: 20px;
+    margin: 50px auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.historia img {
+    width: 380px;
+    margin-right: 40px;
+}
+
+.historia p{
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.mision_vision {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mision_vision div {
+    margin: 20px 40px;
+    width: 400px;
+}
+
+.mision_vision h2{
+    font-size: 30px;
+    font-family: Paytone;
+    text-align: center;
+    width: 100%;
+}
+
+.mision_vision span {
+    color: #ffa500;
+}
+
+.mision_vision p {
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.valores{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.valores h2{
+    font-size: 30px;
+    font-family: Paytone;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.valores h2 span {
+    color: #ffa500;
+}
+
+.valores div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 10px;
+    width: 20%;
+}
+
+.valores div img {
+    width: 120px;
+    height: 120px;
+}
+
+.valores h3 {
+    text-align: center;
+    width: 100%;
+    font-family: InterBlack;
 }
 
 section {
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: InterBlack;
 }
 
 .servicio {
-    width: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    align-items: center;
+    width: 28%;
     height: 400px;
-    margin: 10px;
+    margin: 10px 0;
     line-height: 1.2;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 20px;
 }
 
-.servicio h2 {
-    padding-top: 30px;
+.servicio h4 {
+    width: 100%;
+    padding-top: 5px;
     padding-bottom: 3px;
     font-size: 18px;
-    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
+    font-family: InterBlack;
+    width: 100%;
 }
 
 .servicio p {
+    width: 100%;
     padding: 3px;
     font-size: 15px;
     text-align: justify;
 }
 
 .servicio img {
-    width: 100%;
+    width: 95%;
+    height: 180px;
     border-radius: 8px;
 }

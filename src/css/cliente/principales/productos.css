@@ -12,9 +12,12 @@ aside {
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 40px 20px;
-    translate: -560px -410px;
+    /* translate: -510px -450px; */
+    left: 0;
+    top: 60px;
     width: 200px;
     scale: 0.8;
+    box-shadow: 0 0 10px 5px rgb(220,220,220);
 }
 
 aside h2{
@@ -64,8 +67,10 @@ aside h2{
     display: flex;
     height: 40px;
     justify-content: center;
+    margin-top: 40px;
     margin-bottom: 20px;
     width: 350px;
+    box-shadow: 0 0 10px 5px rgb(220,220,220);
 }
 
 .listPag a{

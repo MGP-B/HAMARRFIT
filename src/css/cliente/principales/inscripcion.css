@@ -11,31 +11,46 @@
 }
 
 .plan {
-    box-shadow: 0 0 30px 2px #FFA500;
+    margin: 10px auto 0;
     position: relative;
-    width: 100%;
+    width: 98%;
     z-index: 2;
+}
+
+.pro {
+    box-shadow: 0 0 30px 2px #FFA500;
 }
 
 table {
     background-color: #2B2D2F;
-    box-shadow: 1px 0  10px 1px black;
-    border-radius: 10px;
+    box-shadow: 1px 0  10px 1px #ccc;
+    border-radius: 0 0 10px 10px;
     color: white;
     font-size: 20px;
-    margin: -7px auto 30px;
-    padding: 20px;
+    margin: 0px auto;
     width: 90%;
-    z-index: 2;
+    z-index: 2; 
 }
 
 td img {
     width: 25px;
 }
 
+td {
+    padding-left: 35px;
+    padding-top: 10px;
+    border-bottom: 0.1px rgba(210,210,210, .3) solid;
+}
+
+td:last-child {
+    padding-bottom: 10px;
+}
+
+
+
 .servicios {
-    align-content: center;
     display: flex;
+    align-content: center;
     justify-content: center;
     margin: 30px auto;
     width: 100%;
@@ -49,9 +64,9 @@ td img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 20px;
+    margin: 0 30px;
     padding: 10px;
-    width: 32%;
+    width: 20%;
 }
 
 .servicioExtra img {
@@ -59,7 +74,7 @@ td img {
     height: 150px;
     margin: 10px;
     padding: 5px;
-    width: 200px;
+    width: 90%;
 }
 
 .servicioExtra h4 {
@@ -112,15 +127,19 @@ td img {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 20px 50px;
-    width: 240px;
+    width: 26%;
 }
 
-.sucursal .imagenSucursal img {
+.imagenSucursal {
+    width: 100%;
+}
+
+.imagenSucursal img {
     border-radius: 5px;
-    height: 140px;
+    height: 180px;
     margin: 0;
     padding: 0;
-    width: 240px;
+    width: 100%;
 }
 
 .sucursal h3 {
